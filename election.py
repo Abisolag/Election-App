@@ -16,7 +16,7 @@ class voting:
         self.start()
 
     def start(self): #This is the homepage for students to register and login
-        print("""WELCOME TO SQI COLLEGE OF ICT\nENTER 1 TO REGISTER\nENTER 2 TO LOG IN\n
+        print("""WELCOME TO Innkeeper Academy\nENTER 1 TO REGISTER\nENTER 2 TO LOG IN\n
               ENTER ANY KEY TO EXIT """)
         self.choice = input(">>>: ")
         if self.choice == "1":
@@ -83,7 +83,7 @@ class voting:
             self.login()
 
     def operate (self):#Function for electoral procedurce
-        print("""WELCOME TO SQI POLLING UNIT\nWHAT OPERATION WILL YOU LIKE TO PERFORM;\n
+        print("""WELCOME TO Innkeeper Academy POLLING UNIT\nWHAT OPERATION WILL YOU LIKE TO PERFORM;\n
               ENTER 1 TO REGISTER TO VOTE\nENTER 2 TO CAST YOUR VOTE\nENTER 3 TO CHECK FOR ELECTION RESULT\nENTER ANY KEY TO EXIT""")
         self.decide = input (">>>>: ")
         if self.decide == "1":
@@ -287,7 +287,7 @@ class voting:
             sys.exit()
 
     def con(self):#Function for next voting exercise
-        print("WHAT OPERATION WILL YOU LIKE TO PERFORM; \nENTER 1 TO CONTINUE VOTE\nENTER 2 TO CHECK RESULT\nENTER KEY TO EXIT: ")
+        print("WHAT OPERATION WILL YOU LIKE TO PERFORM; \nENTER 1 TO CONTINUE VOTE\nENTER 2 TO CHECK RESULT\nENTER ANY KEY TO EXIT: ")
         self.tell = input(">>>: ")
         if self.tell == "1":
             self.confirmcast()
